@@ -1,0 +1,142 @@
+/*Style général*/
+html{
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+    
+
+body{
+    background-image: url("images/back.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    position: relative;
+    height: 100vh;
+    text-transform: capitalize;
+}
+
+#game-box{
+    display: flex;
+    padding: 25px;
+    box-shadow:  3px 5px 14px 2px rgba(0,0,0,0.4);
+    height: 100%;
+}
+
+
+/*Style Player*/
+
+.player-box{
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+}
+
+#player-one-box, #player-two-box{
+    width: 50%;
+    text-align: center;
+}
+
+#player-one-box{
+    background-color: #f6f5f5;
+}
+
+#player-two-box{
+    background-color: #FFFFFF;
+}
+
+h2{
+    font-size: 45px;
+    margin-bottom: 25px;
+    font-weight: 250;
+}
+
+.active h2{
+   font-weight: 600;
+}
+
+.active h2::after{
+    content: "\2022";
+    font-size: 36px;
+    color: #F94343;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+h3{
+    font-size: 15px;
+    margin: 10px;
+}
+
+#score-player-1, #score-player-2{
+    font-size: 70px;
+    padding-left: auto;
+    padding-right: auto;
+    color: #F94343;
+    font-weight: 300;
+}
+
+#score-current-player-1, #score-current-player-2{
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.current-box{
+   height: 50%;
+   padding-top: 75px;
+}
+
+.current-score-box{
+    background-color: #F94343;
+    height: 30%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 100px;
+}
+
+button{
+    position: absolute;
+    border: none;
+    background: none;
+    width: 200px;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-left: 42%;
+}
+
+.btn-new-game { 
+    margin-top: 50px;
+}
+
+.btn-roll { 
+    margin-top: 500px;
+}
+
+.btn-hold { 
+    margin-top: 550px;
+}
+
+.dice{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 45%;
+    width: 100px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+i{
+    margin-right: 10px;
+    font-size: 20px;
+    color: #F94343;
+}

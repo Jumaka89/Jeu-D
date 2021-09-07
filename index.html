@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d946ec8b03.js" crossorigin="anonymous"></script>
+    <title>Jeu de dés</title>
+</head>
+<body>
+    <div id="game-box">
+        <div id="player-one-box">
+            <div class="player-box active">
+                <h2>Player 1</h2>
+                <div id="score-player-1">45</div>
+            </div>
+            
+            <div class="current-box">
+                <div class="current-score-box">
+                    <h3>Current</h3>
+                    <div id="score-current-player-1">50</div>
+                </div> 
+            </div>
+        </div>
+        <div id="player-two-box">
+            <div class="player-box">
+                <h2>Player 2</h2>
+                <div id="score-player-2">89</div>
+            </div>
+            <div class="current-box">
+                <div class="current-score-box">
+                    <h3>Current</h3>
+                    <div id="score-current-player-2">94</div>
+                </div>
+            </div>
+        </div>
+        <img src="images/face-5.png" class="dice">
+        <button class="btn-new-game"><i class="far fa-times-circle"></i>New Game</button>
+        <button class="btn-roll"><i class="fas fa-sync"></i>Roll Dice</button>
+        <button class="btn-hold"><i class="fas fa-external-link-alt"></i>Hold</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
