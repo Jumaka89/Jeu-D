@@ -11,28 +11,28 @@
 </head>
 <body>
     <div id="game-box">
-        <div id="player-one-box">
+        <div id="player-1-box">
             <div class="player-box active">
-                <h2>Player 1</h2>
-                <div id="score-player-1">45</div>
+                <h2 class="name-player-1">Player 1</h2>
+                <div id="score-global-player-1">45</div>
             </div>
             
-            <div class="current-box">
-                <div class="current-score-box">
+            <div class="round-box">
+                <div class="round-score-box">
                     <h3>Current</h3>
-                    <div id="score-current-player-1">50</div>
+                    <div id="score-round-player-1" class="round">14</div>
                 </div> 
             </div>
         </div>
-        <div id="player-two-box">
+        <div id="player-2-box">
             <div class="player-box">
-                <h2>Player 2</h2>
-                <div id="score-player-2">89</div>
+                <h2 class="name-player-2">Player 2</h2>
+                <div id="score-global-player-2">89</div>
             </div>
-            <div class="current-box">
-                <div class="current-score-box">
+            <div class="round-box">
+                <div class="round-score-box">
                     <h3>Current</h3>
-                    <div id="score-current-player-2">94</div>
+                    <div id="score-round-player-2" class="round">6</div>
                 </div>
             </div>
         </div>
@@ -41,6 +41,7 @@
         <button class="btn-roll"><i class="fas fa-sync"></i>Roll Dice</button>
         <button class="btn-hold"><i class="fas fa-external-link-alt"></i>Hold</button>
     </div>
-    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jeu.js"></script>
 </body>
 </html>
