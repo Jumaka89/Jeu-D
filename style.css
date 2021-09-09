@@ -40,16 +40,16 @@ body{
     padding-top: 150px;
 }
 
-#player-1-box, #player-2-box{
+#player-0-box, #player-1-box{
     width: 50%;
     text-align: center;
 }
 
-#player-1-box{
+#player-0-box{
     background-color: #f6f5f5;
 }
 
-#player-2-box{
+#player-1-box{
     background-color: #FFFFFF;
 }
 
@@ -77,7 +77,7 @@ h3{
     margin: 10px;
 }
 
-#score-global-player-1, #score-global-player-2{
+#score-global-player-0, #score-global-player-1{
     font-size: 70px;
     padding-left: auto;
     padding-right: auto;
@@ -85,7 +85,7 @@ h3{
     font-weight: 300;
 }
 
-#score-round-player-1, #score-round-player-2{
+#score-round-player-0, #score-round-player-1{
     font-size: 40px;
     color: #FFFFFF;
 }
