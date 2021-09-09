@@ -25,6 +25,8 @@ function newGame(){
     scoreRound2.textContent = '0';
     document.getElementById('name-player-0').textContent = 'Player 1';
     document.getElementById('name-player-1').textContent = 'Player 2';
+    document.querySelector('.btn-roll').style.display = 'block';
+    document.querySelector('.btn-hold').style.display = 'block';
 }
 
 /****************************
@@ -42,6 +44,7 @@ function nextPlayer(){
     scoreRound1.textContent = '0';
     scoreRound2.textContent = '0';
 
+    //Changement du joueur actif
     document.getElementById('player-0-box').classList.toggle('active');
     document.getElementById('player-1-box').classList.toggle('active');
 
@@ -53,8 +56,8 @@ function nextPlayer(){
 Fonction Lancer du dé
 *********************/
 function rollDice(){
-    if(gameOn){
-        //Résultat lancer du dé&aa
+    if(gameOn == true){
+        //Résultat lancer du dé
         var dice = Math.floor(Math.random() * 6) + 1;
         //Affichage du résultat
         var diceFace = document.querySelector('.dice');
@@ -70,19 +73,24 @@ function rollDice(){
     }     
 }
 
+/******************************* 
+Fonction Gestion du score Global
+********************************/
 function globalPoint(){
-    if(gameOn){
+    if(gameOn == true){
         //Ajout du score Round au score Global
         globalScore[activePlayer] += roundScore;
         //Affichage du score Global
         document.querySelector('#score-global-player-' + activePlayer).textContent = globalScore[activePlayer];
         //Vérification si le joueur a gagné
         if(globalScore[activePlayer] >= 100){
-            alert('fonctionne')
-            document.querySelector('#name-player-'+ activePlayer).textContent = 'Winner!';
+            document.querySelector('#name-player-'+ activePlayer).textContent = 'Winner !';
             document.querySelector('.dice').style.display = 'none';
+            scoreRound1.textContent = '0';
+            scoreRound2.textContent = '0';
+            document.querySelector('.btn-roll').style.display = 'none';
+            document.querySelector('.btn-hold').style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-box').classList.add('winner');
-            document.querySelector('.player-' + activePlayer + '-box').classList.remove('active');
             gameOn == false;
         }else{
             nextPlayer();
@@ -90,6 +98,8 @@ function globalPoint(){
     }
 }
 
+//Appels des fonctions
+newGame();
 document.querySelector('.btn-new-game').addEventListener('click', newGame);
 document.querySelector('.btn-roll').addEventListener('click', rollDice);
 document.querySelector('.btn-hold').addEventListener('click', globalPoint);

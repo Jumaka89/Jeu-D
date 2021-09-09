@@ -1,47 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/d946ec8b03.js" crossorigin="anonymous"></script>
-    <title>Jeu de dés</title>
-</head>
-<body>
-    <div id="game-box">
-        <div id="player-0-box" class="active">
-            <div class="player-box ">
-                <h2 id="name-player-0">Player 1</h2>
-                <div id="score-global-player-0">45</div>
-            </div>
-            
-            <div class="round-box">
-                <div class="round-score-box">
-                    <h3>Current</h3>
-                    <div id="score-round-player-0">14</div>
-                </div> 
-            </div>
-        </div>
-        <div id="player-1-box">
-            <div class="player-box">
-                <h2 id="name-player-1">Player 2</h2>
-                <div id="score-global-player-1">89</div>
-            </div>
-            <div class="round-box">
-                <div class="round-score-box">
-                    <h3>Current</h3>
-                    <div id="score-round-player-1">6</div>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/d946ec8b03.js" crossorigin="anonymous"></script>
+        <title>Jeu de dés</title>
+    </head>
+    <body>
+        <div id="game-box">
+            <div id="player-0-box" class="active">
+                <div class="player-box ">
+                    <h2 id="name-player-0">Player 1</h2>
+                    <div id="score-global-player-0">45</div>
+                </div>
+                <div class="round-box">
+                    <div class="round-score-box">
+                        <h3>Current</h3>
+                        <div id="score-round-player-0">14</div>
+                    </div> 
                 </div>
             </div>
+            <div id="player-1-box">
+                <div class="player-box">
+                    <h2 id="name-player-1">Player 2</h2>
+                    <div id="score-global-player-1">89</div>
+                </div>
+                <div class="round-box">
+                    <div class="round-score-box">
+                        <h3>Current</h3>
+                        <div id="score-round-player-1">6</div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/face-5.png" class="dice">
+            <button class="btn-new-game"><i class="far fa-times-circle"></i>New Game</button>
+            <button class="btn-roll"><i class="fas fa-sync"></i>Roll Dice</button>
+            <button class="btn-hold"><i class="fas fa-external-link-alt"></i>Hold</button>
         </div>
-        <img src="images/face-5.png" class="dice">
-        <button class="btn-new-game"><i class="far fa-times-circle"></i>New Game</button>
-        <button class="btn-roll"><i class="fas fa-sync"></i>Roll Dice</button>
-        <button class="btn-hold"><i class="fas fa-external-link-alt"></i>Hold</button>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="jeu.js"></script>
-</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="jeu.js"></script>
+    </body>
 </html>
